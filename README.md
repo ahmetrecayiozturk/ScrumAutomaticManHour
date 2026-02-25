@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Scrum Automatic Man Hour (Efor Tahminleme ve Kalibrasyon Aracı)
 
 Scrum Automatic Man Hour, yazılım geliştirme takımlarının sprint planlama süreçlerini otomatize eden ve geçmiş sprint verilerinden öğrenerek **adam/saat tahminlerini optimize eden** makine öğrenmesi destekli bir masaüstü uygulamasıdır.
@@ -33,3 +34,7 @@ Proje modüler bir yapıda kurgulanmıştır:
    ```bash
    git clone [https://github.com/ahmetrecayiozturk/ScrumAutomaticManHour.git](https://github.com/ahmetrecayiozturk/ScrumAutomaticManHour.git)
    cd ScrumAutomaticManHour
+=======
+# ScrumAutomaticManHour
+ScrumAutomaticManHour
+>>>>>>> 930fd4a3cfea80b129a01e0e862ba68d4753e655
