@@ -35,6 +35,77 @@ Proje modüler bir yapıda kurgulanmıştır:
    git clone [https://github.com/ahmetrecayiozturk/ScrumAutomaticManHour.git](https://github.com/ahmetrecayiozturk/ScrumAutomaticManHour.git)
    cd ScrumAutomaticManHour
 =======
+###
+======================================================
+         SCRUM AUTOMATION APP - KULLANICI REHBERI
+======================================================
+
+Bu arac, yazilim takimimizin sprint planlama sureclerini 
+otomatize etmek ve efor tahminlerini makine ogrenmesi 
+kullanarak zamanla mukemmellestirmek icin gelistirilmistir.
+
+Sistem iki temel amaca hizmet eder:
+1. Planlama: Yeni bir sprint baslarken gorevlerin karmasikligina 
+   gore otomatik adam/saat tahmini uretmek.
+2. Ogrenme: Sprint bittiginde gerceklesen sureleri analiz ederek, 
+   takimin hizini ogrenip bir sonraki sprint icin katsayilarini 
+   duzeltmek.
+
+------------------------------------------------------
+1. KURULUM VE CALISTIRMA
+------------------------------------------------------
+Uygulama herhangi bir kurulum gerektirmez (Portable calisir).
+
+- Klasoru bilgisayarinizda bir yere cikartin.
+- Klasorun icindeki "main_app.exe" dosyasina cift tiklayin.
+- Eger Windows "Kisisel bilgisayarinizi korudu" uyarisi verirse, 
+  "Ek Bilgi" -> "Yine de Calistir" butonuna tiklayarak guvenle 
+  giris yapabilirsiniz.
+
+------------------------------------------------------
+2. YENI SPRINT TAHMINI OLUSTURMA (Adim 1)
+------------------------------------------------------
+Yeni sprint planlamasinda eforlari hesaplamak icin kullanilir.
+
+Gereksinimler: Icinde gorev detaylarinin (TaskKey, Modul, Ekran 
+Sayisi vb.) bulundugu bir Sprint Excel dosyasi.
+
+Nasıl Yapilir?
+1. Uygulamada "Sprint Excel'i Sec" butonuna tiklayip dosyanizi secin.
+2. "Tahminleri Calistir" butonuna basin.
+3. Ciktilar ".exe" dosyasinin bulundugu klasorde "estimated_output.xlsx" 
+   adiyla otomatik olarak olusturulacaktir.
+
+------------------------------------------------------
+3. SPRINT SONU MODELI EGITME / KALIBRASYON (Adim 2)
+------------------------------------------------------
+Sprint bittiginde, sistem gerceklesen surelerle tahminleri kiyaslayip 
+kendini gunceller.
+
+Gereksinimler: Sadece uc sutundan (TaskKey, Actual_BE, Actual_FE) 
+olusan basit bir Gerceklesenler Excel dosyasi. O sprinte ait tahmin 
+isleminin daha onceden ayni klasorde yapilmis olmasi gerekir.
+
+Nasil Yapilir?
+1. "Gerceklesen (Actuals) Excel'i Sec" butonuna tiklayip dosyanizi secin.
+2. "Modeli Egit" butonuna basin.
+3. Sistem yeni katsayilari hesaplar ve hafizasina kaydeder. Sonraki 
+   tahminler bu yeni ve isabetli oranlara gore yapilacaktir.
+
+------------------------------------------------------
+ONEMLI UYARILAR
+------------------------------------------------------
+- ACIK DOSYALAR: Uygulamayi calistirirken okutacaginiz Excel 
+  dosyalarinin arka planda ACIK OLMADIGINDAN emin olun.
+- KLASOR BUTUNLUGU: ".exe" dosyasini klasorun icinden tek basina 
+  alip baska yere kopyalamayin. Sistemin hafizasi ve gerekli 
+  dosyalar (".json", ".csv" ve "_internal" klasoru) ayni dizinde 
+  kalmalidir.
+- GECMIS VERILER: Klasorde olusan "history.csv" dosyasi uygulamanin 
+  egitim gecmisidir. Sistem bu dosya ile akillanir, lutfen silmeyin.
+
+======================================================
+###
 # ScrumAutomaticManHour
 ScrumAutomaticManHour
 >>>>>>> 930fd4a3cfea80b129a01e0e862ba68d4753e655
